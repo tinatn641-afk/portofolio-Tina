@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #3b1f0e;
+  color: #f5e6cc;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(43, 21, 10, 0.95);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  border-bottom: 2px solid #5e2e0c;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Marcellus', serif;
+  font-size: 1.8em;
+  color: #d8b07e;
+  letter-spacing: 2px;
+}
+.logo span {
+  color: #a0652f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav a {
+  text-decoration: none;
+  color: #f5e6cc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover, nav a.active {
+  color: #d8b07e;
+}
+
+.section {
+  padding: 100px 60px;
+  min-height: 100vh;
+}
+
+/* HOME */
+#home {
+  background: url('https://images.unsplash.com/photo-1505682634904-d7c5631c4682?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#home .content {
+  background: rgba(59, 31, 14, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+}
+h1, h2, h3 {
+  color: #d8b07e;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #5e2e0c;
+  border: none;
+  color: #f5e6cc;
+  padding: 10px 25px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #a0652f;
+}
+
+/* PROJECT */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #4a2511;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #5e2e0c;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+input, textarea {
+  background: #4a2511;
+  border: 1px solid #a0652f;
+  color: #f5e6cc;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+}
+input:focus, textarea:focus {
+  border-color: #d8b07e;
+}
+
+/* FOOTER */
+footer {
+  background: #2b150a;
+  text-align: center;
+  padding: 20px;
+  color: #b38a60;
+}
+
+/* 🔶 TENTANG SAYA */
+#about {
+  background: #2b150a;
+  border-top: 2px solid #5e2e0c;
+  border-bottom: 2px solid #5e2e0c;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about-container .photo {
+  flex: 0 0 160px;
+}
+
+.about-container .photo img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #a0652f;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-container .photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(160,101,47,0.6);
+}
+
+.about-container .bio {
+  max-width: 550px;
+}
+.about-container .bio h3 {
+  font-family: 'Marcellus', serif;
+  font-size: 1.8em;
+  color: #d8b07e;
+  margin-bottom: 10px;
+}
+.about-container .bio p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #f5e6cc;
+}
+
+.profile-info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.profile-info li {
+  margin-bottom: 6px;
+  font-size: 0.95em;
+}
+.profile-info strong {
+  color: #d8b07e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .section {
+    padding: 80px 20px;
+  }
+  .about-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .about-container .photo img {
+    width: 140px;
+    height: 140px;
+  }
+}

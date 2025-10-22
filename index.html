@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Antik - Tina</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">TINA<span>PORTOFOLIO</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="mode-toggle">
+      <input type="checkbox" id="darkModeSwitch" />
+      <label for="darkModeSwitch" class="switch"></label>
+    </div>
+  </header>
+
+  <section id="home" class="section">
+    <div class="content">
+      <h1>Selamat Datang di Dunia Klasik</h1>
+      <p>Portofolio ini memadukan sentuhan antik dengan teknologi modern.</p>
+      <button class="btn">Jelajahi Projek</button>
+    </div>
+  </section>
+
+  <!-- Bagian Tentang Saya -->
+  <section id="about" class="section">
+    <h2>Tentang Saya</h2>
+
+    <div class="about-container">
+      <div class="photo">
+        <img src="tina.jpg" alt="Foto Tina" />
+      </div>
+      <div class="bio">
+        <h3>Tina Tn</h3>
+        <p>
+          Saya Tina, seorang staf QC yang memiliki minat mendalam dalam dunia desain antarmuka (UI/UX)
+          serta pengembangan sistem informasi berbasis web.  
+          Saya senang memadukan estetika klasik dengan teknologi modern untuk menciptakan pengalaman digital yang unik dan berkarakter.
+        </p>
+        <ul class="profile-info">
+          <li><strong>Jabatan:</strong> Staf QC</li>
+          <li><strong>Bidang:</strong> UI/UX & Sistem Informasi</li>
+          <li><strong>Email:</strong> tina@example.com</li>
+          <li><strong>Lokasi:</strong> Bekasi, Indonesia</li>
+        </ul>
+        <a href="cv-tina.pdf" class="btn" download>📄 Unduh CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projek Saya</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Sistem Monitoring NG</h3>
+        <p>Aplikasi web untuk memantau produk NG dan laporan QC yang dapat diakses customer.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portal Liga Maruichi</h3>
+        <p>Website pendaftaran futsal & badminton antar departemen dengan dashboard admin & peserta.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Galeri Karya</h2>
+    <p>Koleksi hasil desain dan projek visual yang sudah saya kerjakan.</p>
+
+    <div class="gallery-container">
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=800&q=80" alt="UI Dashboard">
+        <div class="overlay">
+          <h3>UI Dashboard QC</h3>
+          <p>Desain antarmuka sistem monitoring NG dengan tampilan klasik.</p>
+        </div>
+      </div>
+
+   
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Website Mahogany">
+        <div class="overlay">
+          <h3>Website Mahogany</h3>
+          <p>Website portofolio bernuansa kayu mahogany dan antik.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Design Board">
+        <div class="overlay">
+          <h3>Desain Moodboard</h3>
+          <p>Kombinasi warna & tekstur untuk tema antik dan profesional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Kontak</h2>
+    <p>Hubungi saya untuk kolaborasi atau ide menarik!</p>
+    <form>
+      <input type="text" placeholder="Nama Anda" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Pesan Anda" rows="4"></textarea>
+      <button type="submit" class="btn">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Tina Portofolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
