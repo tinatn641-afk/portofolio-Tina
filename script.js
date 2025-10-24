@@ -66,17 +66,32 @@ document.querySelector('.btn')?.addEventListener('click', () => {
     projectSection.scrollIntoView({ behavior: 'smooth' });
   }
 });
+// ===========================================
+// Animasi Progress Bar Skill Saat Scroll
+// ===========================================
+const skillSection = document.querySelector("#skills");
+const progressBars = document.querySelectorAll(".progress");
 
-// ===========================================
-// Animasi Skill Bar Saat Di-scroll
-// ===========================================
-window.addEventListener("scroll", () => {
-  const skills = document.querySelectorAll(".skill-progress");
-  skills.forEach(skill => {
-    const rect = skill.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 50) {
-      const progress = skill.getAttribute("data-progress");
-      skill.style.width = progress + "%";
-    }
+function showProgress() {
+  progressBars.forEach(bar => {
+    const value = bar.getAttribute("data-progress");
+    bar.style.width = value;
   });
+}
+
+function hideProgress() {
+  progressBars.forEach(bar => {
+    bar.style.width = 0;
+  });
+}
+
+window.addEventListener("scroll", () => {
+  const sectionPos = skillSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 1.2;
+
+  if (sectionPos < screenPos) {
+    showProgress();
+  } else {
+    hideProgress();
+  }
 });
