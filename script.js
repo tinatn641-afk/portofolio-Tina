@@ -66,3 +66,17 @@ document.querySelector('.btn')?.addEventListener('click', () => {
     projectSection.scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+// ===========================================
+// Animasi Skill Bar Saat Di-scroll
+// ===========================================
+window.addEventListener("scroll", () => {
+  const skills = document.querySelectorAll(".skill-progress");
+  skills.forEach(skill => {
+    const rect = skill.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      const progress = skill.getAttribute("data-progress");
+      skill.style.width = progress + "%";
+    }
+  });
+});
