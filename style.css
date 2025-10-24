@@ -129,14 +129,34 @@ input:focus, textarea:focus {
   border-color: #d8b07e;
 }
 
-/* FOOTER */
 footer {
   background: #2b150a;
+  color: #f5e6cc;
   text-align: center;
-  padding: 20px;
-  color: #b38a60;
+  padding: 30px 20px;
+  border-top: 2px solid #5e2e0c;
 }
 
+footer .social-links {
+  margin-bottom: 15px;
+}
+
+footer .social-links a {
+  color: #d8b07e;
+  font-size: 1.6em;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer .social-links a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+footer p {
+  font-size: 0.95em;
+  opacity: 0.9;
+}
 /* 🔶 TENTANG SAYA */
 #about {
   background: #2b150a;
@@ -402,53 +422,98 @@ footer {
     height: 100px;
   }
 }
-/* === SKILL SECTION === */
-#skills {
-  background-color: #f9f3ef;
+
+/* Bagian Pendidikan */
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.education-card {
+  background: #f7f3ef;
   color: #3b1f0e;
-  text-align: center;
-  padding: 60px 20px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
-#skills h2 {
-  font-size: 2em;
+.education-card:hover {
+  transform: translateY(-5px);
+}
+/* Bagian Public Speaking & MC */
+.mc-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.mc-text {
+  flex: 1 1 350px;
+}
+
+.mc-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.mc-highlights {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mc-highlights li {
+  background: #f7f3ef;
+  color: #3b1f0e;
+  padding: 10px 15px;
+  border-radius: 8px;
   margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#skills p {
-  font-size: 1.1em;
-  margin-bottom: 40px;
-  color: #5a4634;
+.mc-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  flex: 1 1 350px;
 }
 
-.skills-container {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.skill {
-  margin-bottom: 25px;
-}
-
-.skill-name {
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.skill-bar {
-  background: #ddd;
-  border-radius: 30px;
+.mc-card {
+  position: relative;
   overflow: hidden;
-  height: 15px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.skill-progress {
-  background: linear-gradient(90deg, #b22222, #7a1717);
-  height: 100%;
-  width: 0;
-  border-radius: 30px;
-  transition: width 1.5s ease-in-out;
+.mc-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.mc-card:hover img {
+  transform: scale(1.1);
+}
+
+.mc-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(59, 31, 14, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mc-card:hover .overlay {
+  opacity: 1;
 }
 
