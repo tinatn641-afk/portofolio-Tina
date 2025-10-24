@@ -516,4 +516,54 @@ footer p {
 .mc-card:hover .overlay {
   opacity: 1;
 }
+/* ============================= */
+/*          SKILL SECTION        */
+/* ============================= */
+#skills {
+  text-align: center;
+  padding: 80px 20px;
+  background: #3b1f0e;
+  color: #f5e6cc;
+}
+
+#skills h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+#skills p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  background: #f5e6cc33;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.progress {
+  background: linear-gradient(90deg, #e5a85d, #d18b47);
+  width: 0;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1.5s ease-out;
+}
 
