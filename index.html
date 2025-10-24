@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio - Tina</title>
@@ -14,12 +15,15 @@
         <li><a href="#home" class="active">Home Page</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#hobby">Hobby</a></li>
-        <li><a href="#skills">Skill</a></li>
         <li><a href="#projects">Project</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="mode-toggle">
+      <input type="checkbox" id="darkModeSwitch" />
+      <label for="darkModeSwitch" class="switch"></label>
+    </div>
   </header>
 
   <section id="home" class="section">
@@ -45,7 +49,7 @@
           I am a highly motivated individual who is eager to work and learn new things, especially in the fields of production and quality control. I have experience as a production operator and currently work as a QCA Staff at PT Maruichi Indonesia since 2023. I possess strong attention to detail, a sense of responsibility, and good analytical skills in maintaining product quality and work efficiency. I am also pursuing a degree in Computer Engineering at STTI Sony Sugema to develop my abilities in technology and information systems. I am committed to continuously improving my competencies to contribute more effectively to quality and innovation in the industrial environment.
         </p>
         <ul class="profile-info">
-          <li><strong>Position:</strong> Staff QC Assurance</li>
+          <li><strong>Position:</strong> Staffco QC Assurance</li>
           <li><strong>Areas of interest:</strong> UI/UX & Sistem Informasi</li>
           <li><strong>Email:</strong> tinatn641@gmail.com</li>
           <li><strong>Address:</strong> Karawang, Indonesia</li>
@@ -55,118 +59,111 @@
     </div>
   </section>
 
-  <!-- Bagian Hobi & Prestasi -->
-  <section id="hobby" class="section">
-    <h2>Hobi & Prestasi</h2>
+    <!-- Bagian Pendidikan -->
+  <section id="education" class="section">
+    <h2>Pendidikan</h2>
+    <div class="education-container">
+      <div class="education-card">
+        <h3>STTI Sony Sugema</h3>
+        <p><strong>Jurusan:</strong> Teknik Informatika</p>
+        <p><strong>Tahun:</strong> 2023 – Sekarang</p>
+        <p>Mempelajari pengembangan sistem informasi, pemrograman web, dan basis data untuk mendukung inovasi digital di dunia industri.</p>
+      </div>
 
-    <div class="hobby-container">
-      <div class="hobby-text">
-        <h3>🏸 My Hobby</h3>
+      <div class="education-card">
+        <h3>SMK PGRI Telagasari</h3>
+        <p><strong>Jurusan:</strong> Teknik Pemesinan</p>
+        <p><strong>Tahun:</strong> 2018 – 2021</p>
+        <p>Mendapatkan dasar keterampilan teknis dan kedisiplinan kerja di lingkungan industri manufaktur.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Bagian Hobi & Prestasi -->
+<section id="hobby" class="section">
+  <h2>Hobi & Prestasi</h2>
+
+  <div class="hobby-container">
+    <div class="hobby-text">
+      <h3>🏸 Saya Suka Bermain Badminton</h3>
+      <p>
+        Saya memiliki ketertarikan besar terhadap olahraga badminton sejak SMP. 
+        Badminton bukan hanya sekadar hobi, tetapi juga menjadi sarana saya untuk melatih kedisiplinan, kerja sama tim, dan sportivitas. 
+        Melalui olahraga ini, saya belajar untuk fokus, pantang menyerah, dan menikmati setiap proses menuju kemenangan.
+      </p>
+      <ul class="hobby-highlights">
+        <li>Juara 1 Liga Mahasiswa</li>
+        <li>Juara 1 SMECUP</li>
+        <li>Juara 3 Ramadhan Cup - PT. Maruichi Indonesia</li>
+      </ul>
+    </div>
+
+    <div class="hobby-gallery">
+      <div class="hobby-card">
+        <img src="ligamhs.jpg" alt="Juara 1 Liga Mahasiswa">
+        <div class="overlay"><h4>Juara 1 Liga Mahasiswa</h4></div>
+      </div>
+      <div class="hobby-card">
+        <img src="smecup.jpg" alt="Juara 1 SMECUP">
+        <div class="overlay"><h4>Juara 1 SMECUP</h4></div>
+      </div>
+      <div class="hobby-card">
+        <img src="maruichicup2.jpg" alt="Juara 3 Ramadhan Cup">
+        <div class="overlay"><h4>Juara 3 Ramadhan Cup</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Bagian Public Speaking & MC -->
+  <section id="public-speaking" class="section">
+    <h2>Public Speaking & MC</h2>
+
+    <div class="mc-container">
+      <div class="mc-text">
+        <h3>🎤 Saya Suka Menjadi MC</h3>
         <p>
-          I've had a passion for badminton since middle school. This sport taught me discipline, teamwork, and a competitive spirit. Besides being a recreational activity, badminton has also led me to various proud achievements.
+          Selain aktif di bidang Quality Control dan teknologi, saya juga memiliki ketertarikan dalam dunia public speaking.
+          Saya sering dipercaya menjadi <strong>Master of Ceremony (MC)</strong> di berbagai acara, baik di lingkungan kampus maupun di perusahaan.
+          Bagi saya, menjadi MC bukan hanya soal berbicara di depan umum, tetapi juga tentang membangun suasana, menjaga energi audiens, 
+          dan menyampaikan pesan dengan percaya diri.
         </p>
-        <ul class="achievements">
-          <li>1st Liga Mahasiswa</li>
-          <li>1st SMECUP</li>
-          <li>3rd Ramadhan Cup - PT. Maruichi Indonesia</li>
+        <ul class="mc-highlights">
+          <li>MC acara internal perusahaan</li>
+          <li>MC acara seminar & acara Wisuda</li>
+          <li>Memiliki kemampuan improvisasi dan percaya diri di depan publik</li>
         </ul>
       </div>
 
-      <div class="hobby-gallery">
-        <div class="hobby-card">
-          <img src="ligamhs.jpg" alt="Juara 1 Liga Mahasiswa" />
-          <div class="overlay">
-            <h4>Juara 1 Liga Mahasiswa</h4>
-          </div>
+      <div class="mc-gallery">
+        <div class="mc-card">
+          <img src="mc1.jpg" alt="Tina sebagai MC di acara kampus">
+          <div class="overlay"><h4>MC Acara Perusahaan</h4></div>
         </div>
-        <div class="hobby-card">
-          <img src="smecup.jpg" alt="Juara 1 SMECUP" />
-          <div class="overlay">
-            <h4>Juara 1 SMECUP</h4>
-          </div>
+        <div class="mc-card">
+          <img src="mc2.jpg" alt="MC acara perusahaan">
+          <div class="overlay"><h4>MC Seminar</h4></div>
         </div>
-        <div class="hobby-card">
-          <img src="maruichicup2.jpg" alt="Juara 3 Ramadhan Cup" />
-          <div class="overlay">
-            <h4>Juara 3 Ramadhan Cup</h4>
-          </div>
+        <div class="mc-card">
+          <img src="mc3.jpg" alt="MC gathering">
+          <div class="overlay"><h4>MC Wisuda</h4></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Bagian Skill -->
-  <section id="skills" class="section">
-    <h2>My Skills</h2>
-    <p>Here are some of my technical and professional skills.</p>
-
-<div class="skills-container">
-      <div class="skill">
-        <div class="skill-name">MICROSOFT OFFICE</div>
-        <div class="skill-bar">
-          <div class="skill-progress" data-progress="90"></div>
-        </div>
-      </div>
-
-    <div class="skills-container">
-      <div class="skill">
-        <div class="skill-name">HTML</div>
-        <div class="skill-bar">
-          <div class="skill-progress" data-progress="90"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">CSS</div>
-        <div class="skill-bar">
-          <div class="skill-progress" data-progress="85"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">JavaScript</div>
-        <div class="skill-bar">
-          <div class="skill-progress" data-progress="75"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">UI/UX Design</div>
-        <div class="skill-bar">
-          <div class="skill-progress" data-progress="80"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">Oracle Database</div>
-        <div class="skill-bar">
-          <div class="skill-progress" data-progress="70"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Project -->
   <section id="projects" class="section">
     <h2>Project Saya</h2>
-    <div class="project-card">
-      <h3>
-        <a href="https://tinatn641-afk.github.io/liga-maruichi-cup2025/" target="_blank" style="text-decoration: none; color: inherit;">
-          Sistem Monitoring NG
-        </a>
-      </h3>
-      <p>
-        Web application for monitoring NG products and QC reports that can be accessed by customers.
-      </p>
-    </div>
-
-    <div class="project-card">
-      <h3>
-        <a href="https://tinatn641-afk.github.io/liga-maruichi-cup2025/" target="_blank" style="text-decoration: none; color: inherit;">
-          Portal Liga Maruichi Cup
-        </a>
-      </h3>
-      <p>Inter-departmental futsal & badminton registration website with interactive display.</p>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Sistem Monitoring NG</h3>
+        <p>Web application for monitoring NG products and QC reports that can be accessed by customers.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portal Liga Maruichi</h3>
+        <p>Inter-departmental futsal & badminton registration website with interactive display.</p>
+      </div>
     </div>
   </section>
 
@@ -241,7 +238,8 @@
   </div>
 </section>
 
-  <section id="contact" class="section">
+  <center>
+    <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Contact me for collaborations or interesting ideas!</p>
     <form>
@@ -251,10 +249,23 @@
       <button type="submit" class="btn">Kirim</button>
     </form>
   </section>
+  </center>
 
-  <footer>
-    <p>© 2025 Tina Portofolio</p>
-  </footer>
+ <footer>
+  <div class="social-links">
+    <a href="https://www.instagram.com/@tiinaa_tn01" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/tina-tn" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/tinatn641-afk" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  <p>© 2025 Tina Portofolio</p>
+</footer>
+
 
   <script src="script.js"></script>
 </body>
